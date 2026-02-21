@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+  font-family: "Gabarito", sans-serif;
+  overflow-x: hidden;
+    width: 100%;
+}
+
+.navbar {
+
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-evenly;
+    border-bottom: 1px solid rgb(205, 204, 204);
+    
+}
+.navbar__s1 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.navbar__s1 p {
+    color: rgb(86, 86, 86);
+}
+.navbar__s1__explore {
+display: flex;
+align-items: center;
+}
+
+.navbar__s2 {
+    padding: 16px ;
+    border: solid 0.5px rgb(87, 87, 87);
+    border-radius: 30px;
+     width: 100%;
+    display: flex;
+    flex: 1;
+    gap: 16px;
+}
+.navbar__s2__placeholder {
+    border: none;
+    width: 100%;
+    font-size: 16px;
+}
+.navbar__s2__placeholder:focus {
+    outline: none;
+}
+.navbar__s3 {
+    gap: 16px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.navbar__s4 {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.navbar__s1__explore , .navbar__s2 ,.navbar__s3 , .navbar__s4 {
+    color: #4a4a4a;
+}
+.categories {
+    display: flex;
+    justify-content: center;   
+    background-color: white;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.categories__types {
+    display: flex;
+    gap: 20px;                 
+    padding: 16px 0;        
+    color: white;
+    overflow-x: auto; 
+    scrollbar-width: none;
+
+    overflow-x: auto;        
+    overflow-y: hidden;
+    white-space: nowrap;     
+    scrollbar-width: none;
+}
+
+
+.categories__types p {
+
+    white-space: nowrap;
+    background-color: #A435F0;
+    padding: 8px;
+    border-radius: 16px;
+    cursor: pointer;
+    border: 1px solid #A435F0 ;
+}
+
+.categories p:hover {
+
+    transition: 1s;
+    background-color: transparent;
+    color: black;
+    border: 1px solid #A435F0 ;
+}
+
+.Welcomeprofile {
+    padding-top: 60px ;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 16px;
+    margin-left: 40px;
+
+}
+.Welcomeprofile__section1{ 
+    margin-left: 40px;
+}
+
+.Welcomeprofile__section2{
+    max-width: 50px;
+    max-height: 50px;
+}
+.Welcomeprofile__name {
+    display: flex;
+    gap: 16px;
+}
+
+.Welcomeprofile__button {
+ border : none;
+ background-color: transparent;
+ color: blueviolet;
+ text-decoration: underline;
+ padding-bottom: 60px;
+}
+
+.saleimage {
+    position: relative;
+    
+}
+.saleimage img {
+    width: 100%;       
+}
+.saleimage__offer {
+    width: 35%;
+    padding: 2%;
+    background-color: white;
+    position: absolute;
+    border: 2px solid black;
+    top: 20%;
+    left: 10%;
+    animation-name: zoom;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes zoom {
+
+    0% {
+
+   transform: scale(0.5);
+   opacity: 0;
+
+    }
+
+    100% {
+
+   opacity: 1;
+   transform: scale(1);
+    }
+}
+
+.Recommended {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-left: 40px;
+    margin-right: 40px; 
+}
+
+.Recommended__container {
+padding-top: 32px;
+display: flex;
+flex-wrap: wrap; 
+justify-content: space-between;
+}
+
+.course__card {
+    width: 300px;
+}
+
+.course__card img {
+    width: 100%;
+    height: auto;
+}
+.topics {
+    padding-bottom: 60px;
+    margin-left: 40px;
+    margin-right: 40px; 
+}
+.topics__container {
+    padding: 32px 0px;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+
+}
+.topics__container p {
+    border: 2px solid #4a4a4a;
+    padding: 10px;
+    flex-grow: 1;
+    flex-basis: 25%;
+}
+
+.popular {
+    padding-bottom: 60px;
+    margin-left: 40px;
+    margin-right: 40px; 
+}
+.popular__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 32px 0px;
+}
+
+.footer {
+background-color: black;
+color: white;
+padding: 24px;
+}
+.footer__one {
+    padding: 16px 0px;
+    display: flex;
+    gap: 48px;
+    margin: 0px 40px;
+}
+
+.footer__one p { 
+   padding: 8px 0px;
+}
+
+.footer__two {
+    margin: 0px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.Recommended__container,
+.popular__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;    
+}
